@@ -1,11 +1,18 @@
 
 
 // Override default variables before the import
-$body-bg: #000;
+$body-bg: gray;
+
+// Override map
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #ff4136
+);
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
 
-:root {
-  --blue: #ff7bff;
-}
+// Override custom properties
+// :root {
+//   --blue: #ff7bff;
+// }
