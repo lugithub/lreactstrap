@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { Button } from 'reactstrap';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.scss";
+import { Button, Container } from "reactstrap";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Button color="primary" className="foo" onClick={console.log}>test</Button>
-      </div>
+      <Container className="custom-class">
+        <div class="bd-example-container-header" />
+        <div class="bd-example-container-sidebar" />
+        <div class="bd-example-container-body" />
+      </Container>
     );
   }
 }

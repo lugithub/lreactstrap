@@ -1,0 +1,70 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.foo {
+  /* background-color: var(--light, blue); */
+}
+
+.bd-example-container-header {
+  height: 3rem;
+  margin-bottom: .5rem;
+  background-color: #fff;
+  border-radius: .25rem;
+}
+
+.bd-example-container-sidebar {
+  float: right;
+  width: 4rem;
+  height: 8rem;
+  background-color: #80bdff;
+  border-radius: .25rem;
+}
+
+.bd-example-container-body {
+  height: 8rem;
+  margin-right: 4.5rem;
+  background-color: #957bbe;
+  border-radius: .25rem;
+}
+
+// Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
+.custom-class {
+  display: none;
+}
+@include media-breakpoint-up(sm) {
+  .custom-class {
+    display: block;
+  }
+}
