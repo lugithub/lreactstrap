@@ -8,19 +8,16 @@ class App extends Component {
     return (
       <Container className="outline-r">
         <div class="row">
-          <div class="col-12 col-md-8">.col-12 .col-md-8</div>
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        </div>
-
-        <div class="row">
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        </div>
-
-        <div class="row">
-          <div class="col-6">.col-6</div>
-          <div class="col-6">.col-6</div>
+          <div class="col-sm-9">
+            Level 1: .col-sm-9
+            <div class="row">
+              <div class="col-8 col-sm-6">Level 2: .col-8 .col-sm-6</div>
+              <div class="col-4 col-sm-6">Level 2: .col-4 .col-sm-6</div>
+            </div>
+          </div>
+          <div class="col-sm-1">
+            a
+          </div>
         </div>
       </Container>
     );
