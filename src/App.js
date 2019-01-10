@@ -7,18 +7,21 @@ class App extends Component {
   render() {
     return (
       <Container className="outline-r">
-        <Row className="outline-g">
-          <Col sm={true} className="outline-b">One of three columns</Col>
-          <Col sm={true}>One of three columns</Col>
-          <Col sm={5}>One of three columns</Col>
-          <Col lg={true}>One of three columns</Col>
-        </Row>
-        <Row className="outline-g">
-          <Col md={true} width={50} className="outline-b">One of three columns</Col>
-          <Col md={true}>One of three columns</Col>
-          <Col md={true}>One of three columns</Col>
-        </Row>        
-        <div>not a row</div>
+        <div class="row">
+          <div class="col-12 col-md-8">.col-12 .col-md-8</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+
+        <div class="row">
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">.col-6</div>
+          <div class="col-6">.col-6</div>
+        </div>
       </Container>
     );
   }
